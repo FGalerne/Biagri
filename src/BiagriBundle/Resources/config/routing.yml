@@ -6,6 +6,15 @@ biagri_acheteur:
     resource: "@BiagriBundle/Resources/config/routing/acheteur.yml"
     prefix:   /acheteur
 
+
+biagri_vendeur:
+    resource: "@BiagriBundle/Resources/config/routing/vendeur.yml"
+    prefix:   /vendeur
+
+biagri_tarifs:
+    resource: "@BiagriBundle/Resources/config/routing/tarifs.yml"
+    prefix:   /tarifs
+
 biagri_homepage:
     path:     /
     defaults: { _controller: BiagriBundle:Default:index }

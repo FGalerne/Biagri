@@ -1,0 +1,21 @@
+
+
+vendeur_show:
+    path:     /{id}/show
+    defaults: { _controller: "BiagriBundle:Vendeur:show" }
+    methods:  GET
+
+vendeur_new:
+    path:     /
+    defaults: { _controller: "BiagriBundle:Vendeur:new" }
+    methods:  [GET, POST]
+
+vendeur_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "BiagriBundle:Vendeur:edit" }
+    methods:  [GET, POST]
+
+vendeur_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "BiagriBundle:Vendeur:delete" }
+    methods:  DELETE

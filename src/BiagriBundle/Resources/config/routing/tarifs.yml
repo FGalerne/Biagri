@@ -1,0 +1,24 @@
+tarifs_index:
+    path:     /
+    defaults: { _controller: "BiagriBundle:Tarifs:index" }
+    methods:  GET
+
+tarifs_show:
+    path:     /{id}/show
+    defaults: { _controller: "BiagriBundle:Tarifs:show" }
+    methods:  GET
+
+tarifs_new:
+    path:     /new
+    defaults: { _controller: "BiagriBundle:Tarifs:new" }
+    methods:  [GET, POST]
+
+tarifs_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "BiagriBundle:Tarifs:edit" }
+    methods:  [GET, POST]
+
+tarifs_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "BiagriBundle:Tarifs:delete" }
+    methods:  DELETE
