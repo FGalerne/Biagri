@@ -1,12 +1,10 @@
-
-
 acheteur_show:
     path:     /{id}/show
     defaults: { _controller: "BiagriBundle:Acheteur:show" }
     methods:  GET
 
 acheteur_new:
-    path:     /new
+    path:     /
     defaults: { _controller: "BiagriBundle:Acheteur:new" }
     methods:  [GET, POST]
 
