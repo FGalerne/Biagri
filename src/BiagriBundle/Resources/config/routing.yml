@@ -1,0 +1,7 @@
+biagri_offer:
+    resource: "@BiagriBundle/Resources/config/routing/offer.yml"
+    prefix:   /offer
+
+biagri_homepage:
+    path:     /
+    defaults: { _controller: BiagriBundle:Default:index }

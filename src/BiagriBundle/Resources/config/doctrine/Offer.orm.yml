@@ -1,0 +1,28 @@
+BiagriBundle\Entity\Offer:
+    type: entity
+    table: null
+    repositoryClass: BiagriBundle\Repository\OfferRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        produits:
+            type: string
+            length: 255
+        proteines:
+            type: integer
+        ps:
+            type: integer
+        humidite:
+            type: integer
+        hagberg:
+            type: integer
+        livraison:
+            type: string
+            length: 255
+        prix:
+            type: integer
+    lifecycleCallbacks: {  }
