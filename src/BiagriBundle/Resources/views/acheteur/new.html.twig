@@ -1,12 +1,49 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>Acheteur creation</h1>
+    <h1>Vos coordonnées</h1>
 
     {{ form_start(form) }}
-        {{ form_widget(form) }}
-        <input type="submit" value="Create" />
+    <div class="form-group row">
+        <label for="Societe-input" class="col-xs-2 col-form-label">Société</label>
+        <div class="col-xs-10">
+            <input class="form-control" type="text" value="Artisanal kale" id="Societe-input">
+        </div>
+
+        {{ form_widget(form.societe) }}
+        {{ form_errors(form.societe) }}
+    </div>
+
+
+        {{ form_widget(form.nom) }}
+        {{ form_errors(form.nom) }}
+
+
+        {{ form_widget(form.prenom) }}
+        {{ form_errors(form.prenom) }}
+
+
+        {{ form_widget(form.adresse) }}
+        {{ form_errors(form.adresse) }}
+
+
+        {{ form_widget(form.cp) }}
+        {{ form_errors(form.cp) }}
+
+
+        {{ form_widget(form.ville) }}
+        {{ form_errors(form.ville) }}
+
+
+
+        {{ form_widget(form.tel) }}
+        {{ form_errors(form.tel) }}
+
+
+        {{ form_widget(form.mail) }}
+        {{ form_errors(form.mail) }}
+
+
+    <input type="submit" value="Create" />
     {{ form_end(form) }}
-
-
 {% endblock %}
