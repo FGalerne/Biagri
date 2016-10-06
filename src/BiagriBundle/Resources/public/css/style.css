@@ -1,3 +1,14 @@
 body{
     background-color: yellow;
 }
+
+.form
+{
+    display: block;
+    margin: auto;
+    width:730px;
+}
+h1
+{
+    text-align: center;
+}
