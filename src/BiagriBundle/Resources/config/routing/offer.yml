@@ -1,7 +1,4 @@
-offer_index:
-    path:     /
-    defaults: { _controller: "BiagriBundle:Offer:index" }
-    methods:  GET
+
 
 offer_show:
     path:     /{id}/show
@@ -9,7 +6,7 @@ offer_show:
     methods:  GET
 
 offer_new:
-    path:     /new
+    path:     /
     defaults: { _controller: "BiagriBundle:Offer:new" }
     methods:  [GET, POST]
 

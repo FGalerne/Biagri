@@ -2,6 +2,10 @@ biagri_offer:
     resource: "@BiagriBundle/Resources/config/routing/offer.yml"
     prefix:   /offer
 
+biagri_acheteur:
+    resource: "@BiagriBundle/Resources/config/routing/acheteur.yml"
+    prefix:   /acheteur
+
 biagri_homepage:
     path:     /
     defaults: { _controller: BiagriBundle:Default:index }

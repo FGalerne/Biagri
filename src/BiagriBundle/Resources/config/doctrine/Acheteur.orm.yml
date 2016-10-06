@@ -1,0 +1,34 @@
+BiagriBundle\Entity\Acheteur:
+    type: entity
+    table: null
+    repositoryClass: BiagriBundle\Repository\AcheteurRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        societe:
+            type: string
+            length: 255
+        nom:
+            type: string
+            length: 255
+        prenom:
+            type: string
+            length: 255
+        adresse:
+            type: string
+            length: 255
+        cp:
+            type: integer
+        ville:
+            type: string
+            length: 255
+        tel:
+            type: integer
+        mail:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

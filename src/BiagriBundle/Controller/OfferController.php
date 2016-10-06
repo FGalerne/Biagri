@@ -14,20 +14,6 @@ use BiagriBundle\Form\OfferType;
  */
 class OfferController extends Controller
 {
-    /**
-     * Lists all Offer entities.
-     *
-     */
-    public function indexAction()
-    {
-        $em = $this->getDoctrine()->getManager();
-
-        $offers = $em->getRepository('BiagriBundle:Offer')->findAll();
-
-        return $this->render('BiagriBundle:offer:index.html.twig', array(
-            'offers' => $offers,
-        ));
-    }
 
     /**
      * Creates a new Offer entity.
