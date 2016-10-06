@@ -5,6 +5,7 @@ namespace BiagriBundle\Form;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
 
 class VendeurType extends AbstractType
 {
@@ -15,7 +16,7 @@ class VendeurType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('ville')
+            ->add('ville', TextType::class, array( 'attr'=>array( 'placeholder'=>'Ex: Rouen' )))
         ;
     }
     
