@@ -220,7 +220,7 @@ class OffreController extends Controller
 
         $fraisTransport = $rouens_tarif[$ind];
 
-        return $fraisTransport;
+        return $fraisTransport*30;
 
     }
     

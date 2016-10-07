@@ -117,9 +117,10 @@ td{
 
 footer{
     margin-bottom: 0;
-    margin-top: auto;
+    margin-top: 300px;
     background: rgba(190, 190, 190, 0.8);
     color:black;
+
 }
 footer a{
     color: black;

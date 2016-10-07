@@ -3,13 +3,13 @@
 {% block body %}
     <div class="container-fluid">
 
-        <h1>Créer votre offre</h1>
+        <h1>Créez votre offre</h1>
         {{ form_start(form, {'action': path('offre_new'), 'method': 'POST' } ) }}
 
         <div class="col-xs-12 col-sm-5 quality">
             <div class="col-xs-12">
                 <div class="form-group row">
-                    <label for="example-text-input" class="col-xs-2 col-form-label">Produits :</label>
+                    <label for="example-text-input" class="col-xs-2 col-form-label">Produits </label>
                     <div class="col-xs-10">
 
                         {{ form_widget(form.produits, {'attr': {'class': 'form-control'}}) }}
@@ -19,7 +19,7 @@
             </div>
             <div class="col-xs-12">
                 <div class="form-group row">
-                    <label for="example-text-input" class="col-xs-2 col-form-label">Ville de livraison:</label>
+                    <label for="example-text-input" class="col-xs-2 col-form-label">Ville de livraison</label>
                     <div class="col-xs-10">
 
                         {{ form_widget(form.livraison, {'attr': {'class': 'form-control'}}) }}
@@ -30,7 +30,7 @@
 
             <div class="col-xs-12">
                 <div class="form-group row">
-                    <label for="example-text-input" class="col-xs-2 col-form-label">Prix :</label>
+                    <label for="example-text-input" class="col-xs-2 col-form-label">Prix </label>
                     <div class="col-xs-3">
 
                         {{ form_widget(form.prixOffre, {'attr': {'class': 'form-control'}}) }}
@@ -44,7 +44,7 @@
             <h3 class="q_tittle">Qualité</h3>
             <div class="col-xs-12">
                 <div class="form-group row">
-                    <label for="example-text-input" class="col-xs-3 col-form-label">Proteïnes :</label>
+                    <label for="example-text-input" class="col-xs-3 col-form-label">Proteïnes </label>
                     <div class="col-xs-3">
 
                         {{ form_widget(form.proteines, {'attr': {'class': 'form-control'}}) }}
@@ -54,7 +54,7 @@
             </div>
             <div class="col-xs-12">
                 <div class="form-group row">
-                    <label for="example-text-input" class="col-xs-3 col-form-label">Poids Spécifique :</label>
+                    <label for="example-text-input" class="col-xs-3 col-form-label">Poids Spécifique </label>
                     <div class="col-xs-3">
 
                         {{ form_widget(form.ps, {'attr': {'class': 'form-control'}}) }}
@@ -64,7 +64,7 @@
             </div>
             <div class="col-xs-12">
                 <div class="form-group row">
-                    <label for="example-text-input" class="col-xs-3 col-form-label">Humidité :</label>
+                    <label for="example-text-input" class="col-xs-3 col-form-label">Humidité </label>
                     <div class="col-xs-3">
 
                         {{ form_widget(form.humidite, {'attr': {'class': 'form-control'}}) }}
@@ -74,7 +74,7 @@
             </div>
             <div class="col-xs-12">
                 <div class="form-group row">
-                    <label for="example-text-input" class="col-xs-3 col-form-label">Hagberg :</label>
+                    <label for="example-text-input" class="col-xs-3 col-form-label">Hagberg </label>
                     <div class="col-xs-3">
 
                         {{ form_widget(form.hagberg, {'attr': {'class': 'form-control'}}) }}
@@ -87,7 +87,7 @@
 
             <div class="col-xs-12">
                 <div class="form-group row">
-                    <label for="example-text-input" class="col-xs-3 col-form-label">Societe :</label>
+                    <label for="example-text-input" class="col-xs-3 col-form-label">Societe </label>
                     <div class="col-xs-9">
 
                         {{ form_widget(form.societe, {'attr': {'class': 'form-control'}}) }}
@@ -97,7 +97,7 @@
             </div>
             <div class="col-xs-12">
                 <div class="form-group row">
-                    <label for="example-text-input" class="col-xs-3 col-form-label">Nom :</label>
+                    <label for="example-text-input" class="col-xs-3 col-form-label">Nom </label>
                     <div class="col-xs-9">
 
                         {{ form_widget(form.nom, {'attr': {'class': 'form-control'}}) }}
@@ -107,7 +107,7 @@
             </div>
             <div class="col-xs-12">
                 <div class="form-group row">
-                    <label for="example-text-input" class="col-xs-3 col-form-label">Prénom :</label>
+                    <label for="example-text-input" class="col-xs-3 col-form-label">Prénom </label>
                     <div class="col-xs-9">
 
                         {{ form_widget(form.prenom, {'attr': {'class': 'form-control'}}) }}
@@ -117,7 +117,7 @@
             </div>
             <div class="col-xs-12">
                 <div class="form-group row">
-                    <label for="example-text-input" class="col-xs-3 col-form-label">Adresse :</label>
+                    <label for="example-text-input" class="col-xs-3 col-form-label">Adresse </label>
                     <div class="col-xs-9">
 
                         {{ form_widget(form.adresse, {'attr': {'class': 'form-control'}}) }}
@@ -127,7 +127,7 @@
             </div>
             <div class="col-xs-12">
                 <div class="form-group row">
-                    <label for="example-text-input" class="col-xs-3 col-form-label">Code Postal :</label>
+                    <label for="example-text-input" class="col-xs-3 col-form-label">Code Postal </label>
                     <div class="col-xs-9">
 
                         {{ form_widget(form.cp, {'attr': {'class': 'form-control'}}) }}
@@ -137,7 +137,7 @@
             </div>
             <div class="col-xs-12">
                 <div class="form-group row">
-                    <label for="example-text-input" class="col-xs-3 col-form-label">Ville :</label>
+                    <label for="example-text-input" class="col-xs-3 col-form-label">Ville </label>
                     <div class="col-xs-9">
 
                         {{ form_widget(form.ville, {'attr': {'class': 'form-control'}}) }}
@@ -147,7 +147,7 @@
             </div>
             <div class="col-xs-12">
                 <div class="form-group row">
-                    <label for="example-text-input" class="col-xs-3 col-form-label">Téléphone :</label>
+                    <label for="example-text-input" class="col-xs-3 col-form-label">Téléphone </label>
                     <div class="col-xs-5">
 
                         {{ form_widget(form.tel, {'attr': {'class': 'form-control'}}) }}
@@ -157,7 +157,7 @@
             </div>
             <div class="col-xs-12">
                 <div class="form-group row">
-                    <label for="example-text-input" class="col-xs-3 col-form-label">mail :</label>
+                    <label for="example-text-input" class="col-xs-3 col-form-label">mail </label>
                     <div class="col-xs-9">
 
                         {{ form_widget(form.mail, {'attr': {'class': 'form-control'}}) }}

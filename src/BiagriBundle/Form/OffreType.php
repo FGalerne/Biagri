@@ -42,35 +42,35 @@ class OffreType extends AbstractType
                 )))
             ->add('societe', TextType::class, array(
                 'attr'=>array(
-                    'placeholder'=>'Ex: 150'
+                    'placeholder'=>'Ex: Zouk machine'
                 )))
             ->add('nom', TextType::class, array(
                 'attr'=>array(
-                    'placeholder'=>'Ex: 150'
+                    'placeholder'=>'Ex: Doe'
                 )))
             ->add('prenom', TextType::class, array(
                 'attr'=>array(
-                    'placeholder'=>'Ex: 150'
+                    'placeholder'=>'Ex: Paul'
                 )))
             ->add('adresse', TextType::class, array(
                 'attr'=>array(
-                    'placeholder'=>'Ex: 150'
+                    'placeholder'=>'Ex: 45 rue du chateau'
                 )))
             ->add('cp', TextType::class, array(
                 'attr'=>array(
-                    'placeholder'=>'Ex: 150'
+                    'placeholder'=>'Ex: 28240'
                 )))
             ->add('ville', TextType::class, array(
                 'attr'=>array(
-                    'placeholder'=>'Ex: 150'
+                    'placeholder'=>'Ex: La loupe'
                 )))
             ->add('tel', TextType::class, array(
                 'attr'=>array(
-                    'placeholder'=>'Ex: 150'
+                    'placeholder'=>'Ex: 0237881855'
                 )))
             ->add('mail', TextType::class, array(
                 'attr'=>array(
-                    'placeholder'=>'Ex: 150'
+                    'placeholder'=>'Ex: baba@zoumba.fr'
                 )))
             ->add('prixOffre', TextType::class, array(
             'attr'=>array(
