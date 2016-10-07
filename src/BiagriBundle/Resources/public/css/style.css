@@ -4,7 +4,7 @@ body{
 div h1 {
     text-align: center;
     color: green;
-    margin-bottom: 25px;;
+    margin-bottom: 25px;
 }
 
 h3{
@@ -14,14 +14,45 @@ h3{
 
 .quality{
     border: 2px solid white;
-    padding
+    padding: 10px 10px 10px 10px;
+    margin: 25px 10px 25px 10px;
+
+}
+.b1{
+    margin-right: 50px;
+    margin-left: 150px;
+    height: 50px;
+}
+
+.b2{
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 50px;
 
 }
 
-.button{
-    display: block;
-    margin: auto;
+.page-index{
+    margin-top: 25%;
+    position: center;
 }
+
+.title{
+    text-align: center;
+    font-size: 100px;
+    color: darkgreen;
+}
+
+.modal-agri{
+    padding: 10px 10px 10px 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.modal-agri {
+    padding: 10px 10px 10px 10px;
+}
+
+
 
 
 

@@ -1,67 +1,31 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>Offre list</h1>
+    <h1 class="title">Bienvenue</h1>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Produits</th>
-                <th>Proteines</th>
-                <th>Ps</th>
-                <th>Humidite</th>
-                <th>Hagberg</th>
-                <th>Livraison</th>
-                <th>Prixoffre</th>
-                <th>Societe</th>
-                <th>Nom</th>
-                <th>Prenom</th>
-                <th>Adresse</th>
-                <th>Cp</th>
-                <th>Ville</th>
-                <th>Tel</th>
-                <th>Mail</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-        {% for offre in offres %}
-            <tr>
-                <td><a href="{{ path('offre_show', { 'id': offre.id }) }}">{{ offre.id }}</a></td>
-                <td>{{ offre.produits }}</td>
-                <td>{{ offre.proteines }}</td>
-                <td>{{ offre.ps }}</td>
-                <td>{{ offre.humidite }}</td>
-                <td>{{ offre.hagberg }}</td>
-                <td>{{ offre.livraison }}</td>
-                <td>{{ offre.prixOffre }}</td>
-                <td>{{ offre.societe }}</td>
-                <td>{{ offre.nom }}</td>
-                <td>{{ offre.prenom }}</td>
-                <td>{{ offre.adresse }}</td>
-                <td>{{ offre.cp }}</td>
-                <td>{{ offre.ville }}</td>
-                <td>{{ offre.tel }}</td>
-                <td>{{ offre.mail }}</td>
-                <td>
-                    <ul>
-                        <li>
-                            <a href="{{ path('offre_show', { 'id': offre.id }) }}">show</a>
-                        </li>
-                        <li>
-                            <a href="{{ path('offre_edit', { 'id': offre.id }) }}">edit</a>
-                        </li>
-                    </ul>
-                </td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
+    <div class="page-index  ">
+        <div class="row">
+             <button type="button" class="btn btn-warning  col-xs-4 col-offset-xs-2 b1" data-toggle="modal" data-target=".bs-example-modal-sm">Je suis Agriculteur</button>
+            <a href="{{ path("offre_new") }}"><button type="button" class="btn btn-success  col-xs-4 col-offset-xs-2 b2">Je suis Acheteur</button></a>
+        </div>
+    </div>
 
-    <ul>
-        <li>
-            <a href="{{ path('offre_new') }}">Create a new entry</a>
-        </li>
-    </ul>
+
+
+    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content modal-agri">
+                Quel est votre ville ?
+                <form action="tata.php" method="post" >
+                    <input type="text" name="ville-agri">
+                    <a href="#"><button type="button" class="btn btn-success  col-xs-4 col-offset-xs-2 b2">Envoyer</button></a>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
 {% endblock %}

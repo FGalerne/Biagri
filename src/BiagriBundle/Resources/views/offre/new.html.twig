@@ -6,7 +6,7 @@
         <h1>Créer votre offre</h1>
         {{ form_start(form, {'action': path('offre_new'), 'method': 'POST' } ) }}
 
-        <div class="col-xs-12 col-sm-6">
+        <div class="col-xs-12 col-sm-5 quality">
             <div class="col-xs-12">
                 <div class="form-group row">
                     <label for="example-text-input" class="col-xs-2 col-form-label">Produits :</label>
@@ -31,7 +31,7 @@
             <div class="col-xs-12">
                 <div class="form-group row">
                     <label for="example-text-input" class="col-xs-2 col-form-label">Prix :</label>
-                    <div class="col-xs-10">
+                    <div class="col-xs-3">
 
                         {{ form_widget(form.prixOffre, {'attr': {'class': 'form-control'}}) }}
                         {{ form_errors(form.prixOffre) }}
@@ -45,7 +45,7 @@
             <div class="col-xs-12">
                 <div class="form-group row">
                     <label for="example-text-input" class="col-xs-3 col-form-label">Proteïnes :</label>
-                    <div class="col-xs-7">
+                    <div class="col-xs-3">
 
                         {{ form_widget(form.proteines, {'attr': {'class': 'form-control'}}) }}
                         {{ form_errors(form.proteines) }}
@@ -55,7 +55,7 @@
             <div class="col-xs-12">
                 <div class="form-group row">
                     <label for="example-text-input" class="col-xs-3 col-form-label">Poids Spécifique :</label>
-                    <div class="col-xs-7">
+                    <div class="col-xs-3">
 
                         {{ form_widget(form.ps, {'attr': {'class': 'form-control'}}) }}
                         {{ form_errors(form.ps) }}
@@ -65,7 +65,7 @@
             <div class="col-xs-12">
                 <div class="form-group row">
                     <label for="example-text-input" class="col-xs-3 col-form-label">Humidité :</label>
-                    <div class="col-xs-7">
+                    <div class="col-xs-3">
 
                         {{ form_widget(form.humidite, {'attr': {'class': 'form-control'}}) }}
                         {{ form_errors(form.humidite) }}
@@ -75,7 +75,7 @@
             <div class="col-xs-12">
                 <div class="form-group row">
                     <label for="example-text-input" class="col-xs-3 col-form-label">Hagberg :</label>
-                    <div class="col-xs-7">
+                    <div class="col-xs-3">
 
                         {{ form_widget(form.hagberg, {'attr': {'class': 'form-control'}}) }}
                         {{ form_errors(form.hagberg) }}
@@ -83,7 +83,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-xs-12 col-sm-6 quality">
+        <div class="col-xs-12 col-sm-5 quality">
 
             <div class="col-xs-12">
                 <div class="form-group row">
