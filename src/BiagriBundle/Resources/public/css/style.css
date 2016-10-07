@@ -1,8 +1,10 @@
 body{
     background-image: url("http://miriadna.com/desctopwalls/images/max/The-summer-fields.jpg");
 }
-h1 {
+div h1 {
     text-align: center;
+    color: green;
+    margin-bottom: 25px;;
 }
 
 h3{
@@ -12,25 +14,15 @@ h3{
 
 .quality{
     border: 2px solid white;
-    margin-top: 100px;
-    padding-bottom: 50px;
-}
-.product{
-    margin-top: 180px;
-}
-div label{
-    /*padding-right: 30px;*/
+    padding
 
-}
-
-.toto{
-    padding-right: 47px;
 }
 
 .button{
     display: block;
     margin: auto;
 }
-.livraison{
-    padding-top: 25px;
-}
+
+
+
+

@@ -1,0 +1,186 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container-fluid">
+
+        <h1>Créer votre offre</h1>
+        {{ form_start(form, {'action': path('offre_new'), 'method': 'POST' } ) }}
+
+        <div class="col-xs-12 col-sm-6">
+            <div class="col-xs-12">
+                <div class="form-group row">
+                    <label for="example-text-input" class="col-xs-2 col-form-label">Produits :</label>
+                    <div class="col-xs-10">
+
+                        {{ form_widget(form.produits, {'attr': {'class': 'form-control'}}) }}
+                        {{ form_errors(form.produits) }}
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="form-group row">
+                    <label for="example-text-input" class="col-xs-2 col-form-label">Ville de livraison:</label>
+                    <div class="col-xs-10">
+
+                        {{ form_widget(form.livraison, {'attr': {'class': 'form-control'}}) }}
+                        {{ form_errors(form.livraison) }}
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12">
+                <div class="form-group row">
+                    <label for="example-text-input" class="col-xs-2 col-form-label">Prix :</label>
+                    <div class="col-xs-10">
+
+                        {{ form_widget(form.prixOffre, {'attr': {'class': 'form-control'}}) }}
+                        {{ form_errors(form.prixOffre) }}
+                    </div>
+                </div>
+            </div>
+
+
+
+            <h3 class="q_tittle">Qualité</h3>
+            <div class="col-xs-12">
+                <div class="form-group row">
+                    <label for="example-text-input" class="col-xs-3 col-form-label">Proteïnes :</label>
+                    <div class="col-xs-7">
+
+                        {{ form_widget(form.proteines, {'attr': {'class': 'form-control'}}) }}
+                        {{ form_errors(form.proteines) }}
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="form-group row">
+                    <label for="example-text-input" class="col-xs-3 col-form-label">Poids Spécifique :</label>
+                    <div class="col-xs-7">
+
+                        {{ form_widget(form.ps, {'attr': {'class': 'form-control'}}) }}
+                        {{ form_errors(form.ps) }}
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="form-group row">
+                    <label for="example-text-input" class="col-xs-3 col-form-label">Humidité :</label>
+                    <div class="col-xs-7">
+
+                        {{ form_widget(form.humidite, {'attr': {'class': 'form-control'}}) }}
+                        {{ form_errors(form.humidite) }}
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="form-group row">
+                    <label for="example-text-input" class="col-xs-3 col-form-label">Hagberg :</label>
+                    <div class="col-xs-7">
+
+                        {{ form_widget(form.hagberg, {'attr': {'class': 'form-control'}}) }}
+                        {{ form_errors(form.hagberg) }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 quality">
+
+            <div class="col-xs-12">
+                <div class="form-group row">
+                    <label for="example-text-input" class="col-xs-3 col-form-label">Societe :</label>
+                    <div class="col-xs-9">
+
+                        {{ form_widget(form.societe, {'attr': {'class': 'form-control'}}) }}
+                        {{ form_errors(form.societe) }}
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="form-group row">
+                    <label for="example-text-input" class="col-xs-3 col-form-label">Nom :</label>
+                    <div class="col-xs-9">
+
+                        {{ form_widget(form.nom, {'attr': {'class': 'form-control'}}) }}
+                        {{ form_errors(form.nom) }}
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="form-group row">
+                    <label for="example-text-input" class="col-xs-3 col-form-label">Prénom :</label>
+                    <div class="col-xs-9">
+
+                        {{ form_widget(form.prenom, {'attr': {'class': 'form-control'}}) }}
+                        {{ form_errors(form.prenom) }}
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="form-group row">
+                    <label for="example-text-input" class="col-xs-3 col-form-label">Adresse :</label>
+                    <div class="col-xs-9">
+
+                        {{ form_widget(form.adresse, {'attr': {'class': 'form-control'}}) }}
+                        {{ form_errors(form.adresse) }}
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="form-group row">
+                    <label for="example-text-input" class="col-xs-3 col-form-label">Code Postal :</label>
+                    <div class="col-xs-9">
+
+                        {{ form_widget(form.cp, {'attr': {'class': 'form-control'}}) }}
+                        {{ form_errors(form.cp) }}
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="form-group row">
+                    <label for="example-text-input" class="col-xs-3 col-form-label">Ville :</label>
+                    <div class="col-xs-9">
+
+                        {{ form_widget(form.ville, {'attr': {'class': 'form-control'}}) }}
+                        {{ form_errors(form.ville) }}
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="form-group row">
+                    <label for="example-text-input" class="col-xs-3 col-form-label">Téléphone :</label>
+                    <div class="col-xs-5">
+
+                        {{ form_widget(form.tel, {'attr': {'class': 'form-control'}}) }}
+                        {{ form_errors(form.tel) }}
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="form-group row">
+                    <label for="example-text-input" class="col-xs-3 col-form-label">mail :</label>
+                    <div class="col-xs-9">
+
+                        {{ form_widget(form.mail, {'attr': {'class': 'form-control'}}) }}
+                        {{ form_errors(form.mail) }}
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    </div>
+
+
+    <input type="submit" value="Valider" class=" btn btn-success col-xs-3 button" h/>
+    {{ form_end(form) }}
+
+    <ul>
+        <li>
+            <a href="{{ path('offre_index') }}">Back to the list</a>
+        </li>
+    </ul>
+{% endblock %}

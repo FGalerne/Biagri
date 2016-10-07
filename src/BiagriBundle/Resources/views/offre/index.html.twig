@@ -1,0 +1,67 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Offre list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Produits</th>
+                <th>Proteines</th>
+                <th>Ps</th>
+                <th>Humidite</th>
+                <th>Hagberg</th>
+                <th>Livraison</th>
+                <th>Prixoffre</th>
+                <th>Societe</th>
+                <th>Nom</th>
+                <th>Prenom</th>
+                <th>Adresse</th>
+                <th>Cp</th>
+                <th>Ville</th>
+                <th>Tel</th>
+                <th>Mail</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for offre in offres %}
+            <tr>
+                <td><a href="{{ path('offre_show', { 'id': offre.id }) }}">{{ offre.id }}</a></td>
+                <td>{{ offre.produits }}</td>
+                <td>{{ offre.proteines }}</td>
+                <td>{{ offre.ps }}</td>
+                <td>{{ offre.humidite }}</td>
+                <td>{{ offre.hagberg }}</td>
+                <td>{{ offre.livraison }}</td>
+                <td>{{ offre.prixOffre }}</td>
+                <td>{{ offre.societe }}</td>
+                <td>{{ offre.nom }}</td>
+                <td>{{ offre.prenom }}</td>
+                <td>{{ offre.adresse }}</td>
+                <td>{{ offre.cp }}</td>
+                <td>{{ offre.ville }}</td>
+                <td>{{ offre.tel }}</td>
+                <td>{{ offre.mail }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('offre_show', { 'id': offre.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('offre_edit', { 'id': offre.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('offre_new') }}">Create a new entry</a>
+        </li>
+    </ul>
+{% endblock %}
