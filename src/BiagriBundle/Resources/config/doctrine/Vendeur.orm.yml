@@ -1,0 +1,15 @@
+BiagriBundle\Entity\Vendeur:
+    type: entity
+    table: null
+    repositoryClass: BiagriBundle\Repository\VendeurRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        ville:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

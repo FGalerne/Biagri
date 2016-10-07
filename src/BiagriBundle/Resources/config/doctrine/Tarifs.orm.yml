@@ -1,0 +1,21 @@
+BiagriBundle\Entity\Tarifs:
+    type: entity
+    table: null
+    repositoryClass: BiagriBundle\Repository\TarifsRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        km:
+            type: integer
+            column: km
+        rouen:
+            type: float
+            column: Rouen
+        iDE:
+            type: float
+            column: IDE
+    lifecycleCallbacks: {  }
