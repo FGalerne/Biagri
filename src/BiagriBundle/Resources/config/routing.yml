@@ -1,10 +1,7 @@
-biagri_offer:
-    resource: "@BiagriBundle/Resources/config/routing/offer.yml"
-    prefix:   /offer
 
-biagri_acheteur:
-    resource: "@BiagriBundle/Resources/config/routing/acheteur.yml"
-    prefix:   /acheteur
+biagri_offre:
+    resource: "@BiagriBundle/Resources/config/routing/offre.yml"
+    prefix:   /offre
 
 biagri_homepage:
     path:     /

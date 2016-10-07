@@ -1,5 +1,5 @@
 body{
-
+    background-image: url("http://miriadna.com/desctopwalls/images/max/The-summer-fields.jpg");
 }
 
 .form
@@ -12,10 +12,12 @@ h1
 {
     text-align: center;
 
-    background-image: url("http://miriadna.com/desctopwalls/images/max/The-summer-fields.jpg");
+
 }
-h1 {
+div h1 {
     text-align: center;
+    color: green;
+    margin-bottom: 25px;
 }
 
 h3{
@@ -25,26 +27,41 @@ h3{
 
 .quality{
     border: 2px solid white;
-    margin-top: 100px;
-    padding-bottom: 50px;
+    padding: 10px 10px 10px 10px;
+    margin: 25px 10px 25px 10px;
+
 }
-.product{
-    margin-top: 180px;
+.b1{
+    margin-right: 50px;
+    margin-left: 150px;
+    height: 50px;
 }
-div label{
-    /*padding-right: 30px;*/
+
+.b2{
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 50px;
 
 }
 
-.toto{
-    padding-right: 47px;
+.page-index{
+    margin-top: 25%;
+    position: center;
 }
 
-.button{
-    display: block;
-    margin: auto;
+.title{
+    text-align: center;
+    font-size: 100px;
+    color: darkgreen;
 }
-.livraison{
-    padding-top: 25px;
 
+.modal-agri{
+    padding: 10px 10px 10px 10px;
+    font-size: 16px;
+    text-align: center;
 }
+
+.modal-agri {
+    padding: 10px 10px 10px 10px;
+}
+

@@ -1,0 +1,88 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Vos offres </h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ offre.id }}</td>
+            </tr>
+            <tr>
+                <th>Produits</th>
+                <td>{{ offre.produits }}</td>
+            </tr>
+            <tr>
+                <th>Proteines</th>
+                <td>{{ offre.proteines }}</td>
+            </tr>
+            <tr>
+                <th>Ps</th>
+                <td>{{ offre.ps }}</td>
+            </tr>
+            <tr>
+                <th>Humidite</th>
+                <td>{{ offre.humidite }}</td>
+            </tr>
+            <tr>
+                <th>Hagberg</th>
+                <td>{{ offre.hagberg }}</td>
+            </tr>
+            <tr>
+                <th>Livraison</th>
+                <td>{{ offre.livraison }}</td>
+            </tr>
+            <tr>
+                <th>Prixoffre</th>
+                <td>{{ offre.prixOffre }}</td>
+            </tr>
+            <tr>
+                <th>Societe</th>
+                <td>{{ offre.societe }}</td>
+            </tr>
+            <tr>
+                <th>Nom</th>
+                <td>{{ offre.nom }}</td>
+            </tr>
+            <tr>
+                <th>Prenom</th>
+                <td>{{ offre.prenom }}</td>
+            </tr>
+            <tr>
+                <th>Adresse</th>
+                <td>{{ offre.adresse }}</td>
+            </tr>
+            <tr>
+                <th>Cp</th>
+                <td>{{ offre.cp }}</td>
+            </tr>
+            <tr>
+                <th>Ville</th>
+                <td>{{ offre.ville }}</td>
+            </tr>
+            <tr>
+                <th>Tel</th>
+                <td>{{ offre.tel }}</td>
+            </tr>
+            <tr>
+                <th>Mail</th>
+                <td>{{ offre.mail }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('offre_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('offre_edit', { 'id': offre.id }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}
