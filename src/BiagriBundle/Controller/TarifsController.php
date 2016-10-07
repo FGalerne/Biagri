@@ -24,7 +24,7 @@ class TarifsController extends Controller
 
         $tarifs = $em->getRepository('BiagriBundle:Tarifs')->findAll();
 
-        return $this->render('BiagriBundle:tarifs:index.html.twig', array(
+        return $this->render('B', array(
             'tarifs' => $tarifs,
         ));
     }
@@ -125,4 +125,6 @@ class TarifsController extends Controller
             ->getForm()
         ;
     }
+    
+    
 }

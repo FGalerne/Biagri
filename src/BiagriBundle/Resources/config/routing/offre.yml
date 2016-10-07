@@ -1,7 +1,7 @@
 offre_index:
     path:     /
     defaults: { _controller: "BiagriBundle:Offre:index" }
-    methods:  GET
+    methods:  [GET, POST]
 
 offre_show:
     path:     /{id}/show

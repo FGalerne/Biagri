@@ -45,6 +45,14 @@ h3{
 
 }
 
+.b3{
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 50px;
+    margin-top: 35px;
+
+}
+
 .page-index{
     margin-top: 25%;
     position: center;
@@ -64,6 +72,11 @@ h3{
 
 .modal-agri {
     padding: 10px 10px 10px 10px;
+    height: 200px;
 }
+.text{
+    margin-top:25px;
+}
+
 
 
