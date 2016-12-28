@@ -1,3 +1,37 @@
+h1, h3{
+    text-align: center;
+
+}
+
+.form-group{
+    margin-top: 10%;
+}
+
+.btn{
+    height: 150px;
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 body{
 
     background-image: url("http://miriadna.com/desctopwalls/images/max/The-summer-fields.jpg");
@@ -131,4 +165,4 @@ footer a{
 }
 #button{
     text-align: center;
-}
+}*/

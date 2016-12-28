@@ -1,1 +1,25 @@
-Hello World!
+{% extends '::base.html.twig'%}
+
+{% block body %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1 >LE COMPARATEUR AGRICOLE</h1>
+                <h3>Bienvenue sur le <b>comparateur agricole</b>. 1er site qui permet de vendre ou d'acheter du blé. </h3>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="row">
+                <div class="col-xs-offset-1 col-xs-10">
+                    <div class="row">
+                        <button type="submit" class="btn btn-success col-xs-offset-2 col-xs-3">Je suis <b>AGRICULTEUR</b></button>
+
+                        <button type="submit" class="btn btn-warning col-xs-offset-2 col-xs-3">Je suis <b>ACHETEUR</b></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+{% endblock %}
